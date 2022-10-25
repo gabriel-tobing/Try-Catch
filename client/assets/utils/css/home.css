@@ -19,8 +19,17 @@
 
 /* Style Guarantee Section */
 
+.guarantee .card {
+    background-color: var(--white-color);
+    user-select: none;
+}
+
 .guarantee .card-image {
     width: 5rem;
     height: 5rem;
     object-fit: cover;
+}
+
+.guarantee .desc {
+    font-size: 0.9rem;
 }
