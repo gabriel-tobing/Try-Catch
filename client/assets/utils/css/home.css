@@ -1,0 +1,26 @@
+@import url(style.css);
+
+/* Style Hero Section */
+
+.hero .desc {
+    line-height: 1.5;
+}
+
+.hero .primary-button {
+    padding: 0.6rem 1.4rem;
+    background-color: var(--primary-color);
+    border-radius: 0.4rem;
+    color: var(--white-color);
+    font-size: 1.1rem;
+    font-weight: var(--fw-semibold);
+}
+
+
+
+/* Style Guarantee Section */
+
+.guarantee .card-image {
+    width: 5rem;
+    height: 5rem;
+    object-fit: cover;
+}

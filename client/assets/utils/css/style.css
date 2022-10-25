@@ -1,0 +1,134 @@
+/* Variable CSS */
+
+:root {
+    --primary-color: #0008C1;
+    --secondary-color: #FF1E1E;
+    --tertier-color: #1C6758;
+    --gray-color: #CFD2CF;
+    --white-color: #F9F9F9;
+    --black-color: #06283D;
+
+    --fw-regular: 400;
+    --fw-medium: 500;
+    --fw-semibold: 600;
+    --fw-bold: 700;
+}
+
+
+
+/* Reset CSS and Style Base */
+
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--white-color);
+    font-family: "Poppins", sans-serif;
+}
+
+button {
+    border: none;
+    outline: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+::-webkit-scrollbar {
+    width: 9px;
+}
+
+::-webkit-scrollbar-track {
+background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: var(--black-color);
+    border-radius: 0.4rem;
+}
+
+
+
+/* Reuseable Class */
+
+.title {
+    color: var(--black-color);
+    font-weight: var(--fw-bold);
+}
+
+.desc {
+    color: var(--black-color);
+    font-weight: var(--fw-regular);
+}
+
+
+
+/* Style Navbar Section */
+
+.navbar {
+    background-color: var(--white-color);
+}
+
+.navbar.scroll {
+    box-shadow:0 0.125rem 0.25rem rgba(6, 40, 61, 0.075);
+}
+
+.navbar .logo-image {
+    width: 3rem;
+    height: 3rem;
+}
+
+.navbar .nav-link {
+    display: inline-block;
+    color: var(--black-color) !important;
+    font-weight: var(--fw-semibold);
+    transition: 0.3s;
+    position: relative;
+}
+
+.navbar .nav-link:hover {
+    color: var(--primary-color) !important;
+}
+
+.navbar .nav-link::before {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: -0.2rem;
+    transform: translateX(-50%);
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: var(--secondary-color);
+    border-radius: 50%;
+    display: none;
+}
+
+.navbar .nav-link.active {
+    color: var(--primary-color) !important;
+}
+
+.navbar .nav-link.active::before {
+    display: block;
+}
+
+.navbar .primary-button {
+    padding: 0.5rem 1rem;
+    background-color: var(--tertier-color);
+    border-radius: 0.4rem;
+    color: var(--white-color);
+    font-weight: var(--fw-semibold);
+}
+
+
+
+/* Style Footer Section */
